@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Пилот эксперимента · 30 дней с алгоритмом X</title>
+  <meta name="description" content="Ежедневный помощник для эксперимента с алгоритмом X: что сделать сегодня, готовые тексты постов, картинки и учёт данных." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css?v=6" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232d47b8'/%3E%3Cpath d='M8 22V10m5 12V14m5 8v-5m5 5V8' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip" href="#main">К содержимому</a>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="currentColor"/><path d="M8 22V10m5 12V14m5 8v-5m5 5V8" stroke="var(--color-surface)" stroke-width="3" stroke-linecap="round"/></svg>
+        <div>
+          <div class="brand-name">Пилот эксперимента</div>
+          <div class="brand-sub">30 дней с алгоритмом X</div>
+        </div>
+      </div>
+      <div id="savestate" class="savestate" aria-live="polite"></div>
+    </div>
+    <nav class="wrap tabs" id="tabs" aria-label="Разделы" hidden>
+      <button data-tab="today" class="tab">Сегодня</button>
+      <button data-tab="days" class="tab">Дни</button>
+      <button data-tab="results" class="tab">Итоги</button>
+      <button data-tab="rules" class="tab">Правила</button>
+      <button data-tab="settings" class="tab">Настройки</button>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <div id="app"><div class="loading">Загружаю…</div></div>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script>window.__API_BASE__ = '';</script>
+  <script src="./app.js?v=8"></script>
+</body>
+</html>
