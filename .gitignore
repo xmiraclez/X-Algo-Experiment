@@ -1,0 +1,4 @@
+pilot/data/*.json
+pilot/data/*.tmp
+__pycache__/
+*.pyc
